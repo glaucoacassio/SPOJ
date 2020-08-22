@@ -36,9 +36,7 @@ int main()
     while (*ptr)
     {
         if (fast_atoi(ptr) % k == 0)
-        {
         	++count;
-        }
     }
         
     printf("%d", count);
