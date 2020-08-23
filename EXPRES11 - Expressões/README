@@ -24,6 +24,7 @@ Restrições
 a cadeia de caracteres A tem entre 1 e 100000 caracteres.
 a cadeia de caracteres A contém apenas caracteres '{', '[', '(', '}', ']' e ')'.
 Exemplos
+
 Entrada
 12
 ()
