@@ -1,0 +1,60 @@
+DENGUE - Dengue
+A Costa do Mosquito é um país pequeno mas paradisíaco. Todos os habitantes têm boas moradias, bons empregos, o clima é agradável, e os governantes são justos e incorruptíveis. O sistema de transporte público da Costa do Mosquito é composto de uma rede de linhas de trem. O sistema foi projetado de forma peculiar: existe um único percurso ligando duas quaisquer vilas (esse percurso possivelmente passa por outras vilas). Por exemplo, na figura abaixo, que mostra um trecho do mapa da Costa do Mosquito, há apenas um percurso entre as vilas A e C, passando pelas vilas B, G e D. Uma tarifa fixa de M$ 1,00 é cobrada por cada viagem entre vilas vizinhas; assim, para uma viagem de A a C o usuário gasta M$ 4,00.
+
+Devido a um inesperado surto de dengue, o Ministério da Saúde da Costa do Mosquito resolveu montar um Posto de Vacinação. Para evitar que habitantes gastem muito dinheiro para se deslocar até a vila onde ficará o Posto de Vacinação, o Ministério da Saúde decidiu que este deverá ser instalado em uma vila de forma que o gasto com transporte até o Posto, para os habitantes que gastarem mais, seja o menor possível (para o caso da figura abaixo a vila escolhida seria G).
+
+              E
+              |
+              |
+  A --- B --- G --- D --- C
+              |
+              |
+              F
+Figura: Trecho do mapa da Costa do Mosquito.
+
+Tarefa
+Sua tarefa é escrever um programa que determine uma vila onde deve ser instalado o Posto de Vacinação. Esta vila deve ser tal que o custo com transporte, para os habitantes que tiverem maior custo, seja o menor possível. Note que devido à característica peculiar do sistema viário, ou haverá uma única vila que satisfaz essa restrição, ou haverá duas vilas que a satisfazem. No caso de existirem duas vilas apropriadas, qualquer uma delas serve como solução.
+
+Entrada
+A entrada é composta de vários conjuntos de teste. A primeira linha de um conjunto de testes contém um número inteiro N que indica a quantidade de vilas do país. As vilas são numeradas de 1 a N. As N-1 linhas seguintes contêm, cada uma, dois inteiros positivos X e Y que indicam que a vila X tem um caminho que a liga diretamente com a vila Y, sem passar por outras vilas. O final da entrada é indicado por N = 0.
+
+Exemplo de Entrada
+2
+1 2
+7
+1 2
+2 5
+7 4
+7 2
+4 6
+3 4
+1
+0
+Saída
+Para cada conjunto de teste da entrada seu programa deve produzir três linhas na saída. A primeira linha deve conter um identificador do conjunto de teste, no formato "Teste n", onde n é numerado a partir de 1. A segunda linha deve conter o número da vila na qual deve ser instalado o Posto de Vacinação. A terceira linha deve ser deixada em branco. A grafia mostrada no Exemplo de Saída, abaixo, deve ser seguida rigorosamente.
+
+Exemplo de Saída
+Teste 1
+1
+
+Teste 2
+7
+
+Teste 3
+1
+(esta saída corresponde ao exemplo de entrada acima)
+
+Restrições
+0 ≤ N ≤ 100 (N = 0 apenas para indicar o final da entrada)
+
+Adicionado por:	Wanderley Guimarăes
+Data:	2007-02-24
+Tempo limite:	1s
+Tamanho do fonte:	50000B
+Memory limit:	1536MB
+Cluster:	Cube (Intel G860)
+Linguagem permitida:	Todas exceto: ASM64 CLOJURE ERL FSHARP JS-RHINO NODEJS PERL6 PY_NBC SCALA TCL VB.NET
+Origem:	Olimpiada Brasileira de Informatica 2001
+
+
+Fonte: https://br.spoj.com/problems/DENGUE/
