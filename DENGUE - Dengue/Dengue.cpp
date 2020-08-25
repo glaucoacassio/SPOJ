@@ -63,20 +63,23 @@ int main(int argc, char **argv)
 		for (int i = 1; i <= n; i++)
 		{
 			dist_max = INT_MIN;
-			for (int j = 1; j <= n; j++)
-				dist[j] = -1;//Como queremos a distancia nao precisamos saber se visitamos um vertice marcamos
-				//todas as distancias como -1 e so vemos se ja passou nessa distancia
+			//Como queremos a distancia nao precisamos saber se visitamos um vertice marcamos
+			//todas as distancias como -1 e so vemos se ja passou nessa distancia
+			//esta dentro do primeiro for porque precisamos iniciar toda vez senao na dfs ele nunca vai andar...
+			for (int j = 1; j <= n; j++) dist[j] = -1;
+			
 			dist[i] = 0; //a distancia pra mim mesmo é 0
 			dfs(i);		 //faco a busca nesse vertice
 			if (dist_max < dist_min)
 			{
-      //se é a menor distancia entao achei meu vertice(os vertices sao de 1...n)
+      				//se é a menor distancia entao achei meu vertice(os vertices sao de 1...n)
 				ans = i;
 				dist_min = dist_max;
 			}
 		}
 		printf("Teste %d\n%d\n\n", ++cont, ans);
-    //depois limpo todo o meu vetor...passo necessario senao ele vai achar que todos vertices pertencem a um grafo so!
+    		
+		//depois limpo todo o meu vetor...passo necessario senao ele vai achar que todos vertices pertencem a um grafo so!
 		for (int i = 1; i <= n; i++)
 			AdjList[i].clear();
 	}
