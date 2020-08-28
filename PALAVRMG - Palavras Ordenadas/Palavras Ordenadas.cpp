@@ -41,7 +41,7 @@ int main(int argc, char const *argv[])
     for (int i = 0; i < n; i++)
     {
         getline(cin, word);
-        if(sorted_word(word)) cout << word <<": O" << endl;
+        if(sorted_word(word)) cout << word << ": O" << endl;
         else cout << word << ": N" << endl;
     }
     return 0;
