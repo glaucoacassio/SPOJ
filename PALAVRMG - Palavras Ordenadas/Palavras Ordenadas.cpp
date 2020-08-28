@@ -24,7 +24,7 @@ bool sorted_word(string& word)
 {
     if (word.length() > 1)
     {
-        for (int j = 0; j < word.length() - 1; j++)
+        for (int j = 0; j < word.length()-1; j++)//ultimo caractere nao conta '\0'
         if (tolower(word[j]) > tolower(word[j + 1]) || tolower(word[j]) == tolower(word[j + 1]))
             return false;
     }
