@@ -33,11 +33,7 @@ bool sorted_word(string& word)
 
 int main(int argc, char const *argv[])
 {
-	#ifndef ONLINE_JUDGE
-		freopen("in.txt", "r", stdin);
-		freopen("out.txt", "w", stdout);
-	#endif
-	int n;
+    int n;
     string word;
 
     cin >> n;
@@ -48,5 +44,5 @@ int main(int argc, char const *argv[])
         if(sorted_word(word)) cout << word <<": O" << endl;
         else cout << word << ": N" << endl;
     }
-	return 0;
+    return 0;
 }
