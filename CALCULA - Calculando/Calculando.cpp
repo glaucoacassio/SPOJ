@@ -43,7 +43,6 @@ int main(int argc, char const *argv[])
     ios::sync_with_stdio(false);
     cin.tie(0);
     int n, soma, tc = 1;
- 
     while(scanf("%d",&n), n)
     {
         vector<int> v(n);
