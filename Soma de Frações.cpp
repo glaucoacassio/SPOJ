@@ -6,14 +6,13 @@
  
 using namespace std;
  
-int MDC(int a, int b) 
+int mdc(int a, int b) 
 {
 	if(b == 0)  return a;
-	
 	return MDC(b, a % b);
 }
  
-int MMC(int a, int b) 
+int mmc(int a, int b) 
 {
 	return a*b/MDC(a, b);
 }
@@ -23,12 +22,9 @@ int main ()
 	int a, b, c, d, num, den, mdc; 
 	
 	scanf("%d %d %d %d",&a, &b, &c, &d);
-	
-    num = MMC(b, d);   
+    	num = mmc(b, d);   
 	den = ((num/b) * a) + ((num/d) * c);
-	
 	mdc = MDC(num, den);
-	
 	printf("%d %d\n", den/mdc, num/mdc);
 	
 	return 0;
