@@ -23,7 +23,10 @@ Temos, então, 4 possíveis duplas que poderemos usar nesta Oficina, que são (5
 Note que a dupla (1, 3), por exemplo, não pode ser escolhida pelo dono da academia, pois a mais habilidosa dentre as duas é também a mais nova da dupla.
 
 Entrada
-A primeira linha contém um número N, que representa a quantidade de dançarinas que estão registradas na academia. A segunda linha da entrada contém N inteiros, onde o primeiro inteiro é o nível da dançarina que está há mais tempo na academia, o segundo inteiro é o nível da próxima dançarina mais antiga na academia (mas mais nova que a dançarina anterior), e assim sucessivamente.
+A primeira linha contém um número N, que representa a quantidade de dançarinas que estão registradas na academia. 
+A segunda linha da entrada contém N inteiros, onde o primeiro inteiro é o nível da dançarina 
+que está há mais tempo na academia, o segundo inteiro é o nível da próxima dançarina mais antiga na academia (mas mais nova que a dançarina anterior), 
+e assim sucessivamente.
 
 Saída
 A saída consistirá num único número X, que representa o total de duplas de dançarinas válidas para essa Oficina, dadas as regras descritas anteriormente.
