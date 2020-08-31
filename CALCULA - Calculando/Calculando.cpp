@@ -39,7 +39,7 @@ int main(int argc, char const *argv[])
         freopen("in.txt", "r", stdin);
         freopen("out.txt", "w", stdout);
     #endif
-	setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "Portuguese");
     ios::sync_with_stdio(false);
     cin.tie(0);
     int n, soma, tc = 1;
