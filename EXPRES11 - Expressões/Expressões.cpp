@@ -73,7 +73,7 @@ int main()
     freopen("in.txt", "r", stdin);
     freopen("out.txt", "w", stdout);
     #endif
-	string expr; 
+    string expr; 
     int n;
 
     scanf("%d",&n);
@@ -81,8 +81,8 @@ int main()
     while(n--)
     {
         getline(cin, expr);
-	    if (estaBalanceada(expr)) cout << "S" << endl; 
-	    else cout << "N" << endl;
+	if (estaBalanceada(expr)) cout << "S" << endl; 
+        else cout << "N" << endl;
     } 
 	return 0; 
 }
