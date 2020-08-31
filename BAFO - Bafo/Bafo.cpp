@@ -9,7 +9,6 @@ int main(void) {
 	while(scanf("%d", &numero) && numero != 0) {	 
 		somaA = 0;
 		somaB = 0;
-		
 		for(i = 0; i<numero; i++) {
 			scanf("%d %d", &aldo, &beto);
 			somaA += aldo;
